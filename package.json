@@ -1,0 +1,50 @@
+{
+  "name": "raydium-migration-sniper",
+  "version": "1.0.0",
+  "description": "Raydium migration sniper bot for monitoring and executing token migrations",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit",
+    "lint": "echo \"No linter configured\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "solana",
+    "raydium",
+    "migration",
+    "sniper",
+    "trading",
+    "bot"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.32.1",
+    "@grpc/grpc-js": "^1.13.4",
+    "@raydium-io/raydium-sdk-v2": "^0.2.30-alpha",
+    "@solana/spl-token": "^0.4.14",
+    "@solana/web3.js": "^1.98.4",
+    "@triton-one/yellowstone-grpc": "^4.0.2",
+    "axios": "^1.13.2",
+    "bn.js": "^5.2.2",
+    "bs58": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "mongoose": "^8.19.3"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.2.0",
+    "@types/node": "^22.10.5",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
