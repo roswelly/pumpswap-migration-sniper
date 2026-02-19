@@ -2,6 +2,9 @@
 
 PumpSwap migration sniper can snipe on the same block, 0 block(84%).
 
+## Updates for Cashback
+- Pump Swap Buy and Sell instruction
+
 ## Contact
 - [telegram](https://t.me/roswellecho)
 
