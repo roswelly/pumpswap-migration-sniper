@@ -4,6 +4,31 @@ PumpSwap migration sniper can snipe on the same block, 0 block(84%).
 
 ## Updates for Cashback
 - Pump Swap Buy and Sell instruction
+```
+.remainingAccounts([
+  {
+    pubkey: wsolAta, // Index 0: WSOL ATA of UserVolumeAccumulator
+    isSigner: false,
+    isWritable: true,
+  },
+])
+```
+```
+.remainingAccounts([
+  {
+    pubkey: wsolAta, // Index 0: WSOL ATA
+    isSigner: false,
+    isWritable: true,
+  },
+  {
+    pubkey: userVolumeAccumulator, // Index 1: PDA
+    isSigner: false,
+    isWritable: true,
+  },
+])
+```
+
+
 
 ## Contact
 - [telegram](https://t.me/roswellecho)
